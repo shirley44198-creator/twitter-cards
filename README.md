@@ -1,20 +1,20 @@
-# 六大交易所 Twitter Cards
+# Twitter Cards for 6 Crypto Exchanges
 
-为 6 个交易所生成的 Twitter / X 大卡片落地页，支持中、英双语。
+Bilingual (CN/EN) Twitter large-card landing pages for referral links.
 
-## 链接速查
+## Usage
 
-| 交易所 | 中文卡片 | 英文卡片 |
+1. `python gen_twitter_cards.py` generates all images + landing pages.
+2. `python configure.py` replaces `{{BASE_URL}}` with your real GitHub Pages URL.
+3. Push to GitHub Pages and tweet the links.
+
+## Links
+
+| Exchange | CN | EN |
 |---|---|---|
-| Binance 币安 | https://shirley44198-creator.github.io/twitter-cards/binance/ | https://shirley44198-creator.github.io/twitter-cards/binance/en/ |
-| OKX 欧易 | https://shirley44198-creator.github.io/twitter-cards/okx/ | https://shirley44198-creator.github.io/twitter-cards/okx/en/ |
-| Bybit | https://shirley44198-creator.github.io/twitter-cards/bybit/ | https://shirley44198-creator.github.io/twitter-cards/bybit/en/ |
-| Bitget | https://shirley44198-creator.github.io/twitter-cards/bitget/ | https://shirley44198-creator.github.io/twitter-cards/bitget/en/ |
-| BIT | https://shirley44198-creator.github.io/twitter-cards/bit/ | https://shirley44198-creator.github.io/twitter-cards/bit/en/ |
-| MSX | https://shirley44198-creator.github.io/twitter-cards/msx/ | https://shirley44198-creator.github.io/twitter-cards/msx/en/ |
-
-## 使用方式
-
-在 X/Twitter 发推时，把对应链接贴在推文末尾，系统会自动抓取 `summary_large_image` 大卡片预览。
-
-如果首次发布没有显示大卡片，请到 https://cards-dev.twitter.com/validator 粘贴链接刷新缓存。
+| Binance | `/binance/` | `/binance/en/` |
+| OKX | `/okx/` | `/okx/en/` |
+| Bybit | `/bybit/` | `/bybit/en/` |
+| Bitget | `/bitget/` | `/bitget/en/` |
+| BIT | `/bit/` | `/bit/en/` |
+| MSX | `/msx/` | `/msx/en/` |
