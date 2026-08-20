@@ -1,20 +1,23 @@
 # Twitter Cards for 6 Crypto Exchanges
 
-Bilingual (CN/EN) Twitter large-card landing pages for referral links.
+Bilingual (CN/EN) Twitter `summary_large_image` cards + landing pages for 6 exchange referral codes.
 
-## Usage
-
-1. `python gen_twitter_cards.py` generates all images + landing pages.
-2. `python configure.py` replaces `{{BASE_URL}}` with your real GitHub Pages URL.
-3. Push to GitHub Pages and tweet the links.
-
-## Links
+## Live Links
 
 | Exchange | CN | EN |
 |---|---|---|
-| Binance | `/binance/` | `/binance/en/` |
-| OKX | `/okx/` | `/okx/en/` |
-| Bybit | `/bybit/` | `/bybit/en/` |
-| Bitget | `/bitget/` | `/bitget/en/` |
-| BIT | `/bit/` | `/bit/en/` |
-| MSX | `/msx/` | `/msx/en/` |
+| Binance | https://shirley44198-creator.github.io/twitter-cards/binance/ | https://shirley44198-creator.github.io/twitter-cards/binance/en/ |
+| OKX | https://shirley44198-creator.github.io/twitter-cards/okx/ | https://shirley44198-creator.github.io/twitter-cards/okx/en/ |
+| Bybit | https://shirley44198-creator.github.io/twitter-cards/bybit/ | https://shirley44198-creator.github.io/twitter-cards/bybit/en/ |
+| Bitget | https://shirley44198-creator.github.io/twitter-cards/bitget/ | https://shirley44198-creator.github.io/twitter-cards/bitget/en/ |
+| BIT | https://shirley44198-creator.github.io/twitter-cards/bit/ | https://shirley44198-creator.github.io/twitter-cards/bit/en/ |
+| MSX | https://shirley44198-creator.github.io/twitter-cards/msx/ | https://shirley44198-creator.github.io/twitter-cards/msx/en/ |
+
+## How to regenerate
+
+```bash
+python gen_twitter_cards.py
+python set_base.py
+```
+
+Then commit and push to GitHub Pages.
