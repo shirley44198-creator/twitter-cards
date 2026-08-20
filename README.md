@@ -2,6 +2,8 @@
 
 Bilingual (CN/EN) Twitter `summary_large_image` cards + landing pages for 6 exchange referral codes.
 
+Card images use a version suffix (`-v3`) to bust Twitter's image cache. Bump `VER` in `gen_twitter_cards.py` and regenerate when the design changes.
+
 ## Live Links
 
 | Exchange | CN | EN |
