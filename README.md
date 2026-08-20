@@ -1,10 +1,8 @@
-# Twitter Cards for 6 Crypto Exchanges
+# Twitter Cards for 6 Exchanges
 
-Bilingual (CN/EN) Twitter `summary_large_image` cards + landing pages for 6 exchange referral codes.
+Bilingual (CN/EN) landing pages + `summary_large_image` cards for Twitter sharing.
 
-Card images use a version suffix (`-v3`) to bust Twitter's image cache. Bump `VER` in `gen_twitter_cards.py` and regenerate when the design changes.
-
-## Live Links
+## Live links
 
 | Exchange | CN | EN |
 |---|---|---|
@@ -15,11 +13,16 @@ Card images use a version suffix (`-v3`) to bust Twitter's image cache. Bump `VE
 | BIT | https://shirley44198-creator.github.io/twitter-cards/bit/ | https://shirley44198-creator.github.io/twitter-cards/bit/en/ |
 | MSX | https://shirley44198-creator.github.io/twitter-cards/msx/ | https://shirley44198-creator.github.io/twitter-cards/msx/en/ |
 
-## How to regenerate
+## Cache-busting
+
+Twitter caches both page and image aggressively. To force a refresh after redesigning the card:
+
+1. Bump `VER` in `gen_twitter_cards.py`.
+2. Re-generate and re-deploy. This changes the image filename (e.g. `card-cn-v4.png`).
+3. When sharing on Twitter, append a fresh query parameter like `?v=5` to the landing URL.
+
+## Generate locally
 
 ```bash
 python gen_twitter_cards.py
-python set_base.py
 ```
-
-Then commit and push to GitHub Pages.
